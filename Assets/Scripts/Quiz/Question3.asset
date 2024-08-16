@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 907350b2d69debc479f1eb87598dfc50, type: 3}
+  m_Name: Question3
+  m_EditorClassIdentifier: 
+  question: "(3/3)\u4EE5\u4E0B\u5173\u4E8E\u5224\u65AD\u8611\u83C7\u662F\u5426\u6709\u6BD2\u7684\u8BF4\u6CD5\u4E2D\u6B63\u786E\u7684\u662F\uFF1F"
+  options:
+  - "\u53EA\u6709\u989C\u8272\u9C9C\u8273\u7684\u8611\u83C7\u624D\u6709\u6BD2"
+  - "\u5F53\u5730\u6751\u6C11\u8D29\u5356\u7684\u91CE\u751F\u83CC\u80AF\u5B9A\u662F\u65E0\u6BD2\u7684"
+  - "\u5F53\u524D\u6CA1\u6709\u51C6\u786E\u5224\u65AD\u91CE\u751F\u83CC\u662F\u5426\u6709\u6BD2\u7684\u65B9\u6CD5"
+  correctOption: 2

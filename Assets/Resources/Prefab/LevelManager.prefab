@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4246000360258591653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8734083725842453089}
+  - component: {fileID: 4718093919927163669}
+  - component: {fileID: 7406086875191274853}
+  - component: {fileID: 744560750278552738}
+  - component: {fileID: 7005312529838217639}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8734083725842453089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4246000360258591653}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.306, y: 0.014528036, z: -0.258}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4718093919927163669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4246000360258591653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c912286c5d3882b4882e77f321660c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mushroomPrefab:
+  - {fileID: 4963311066311942203, guid: 8c9c6bc846351f442b1c895d55045881, type: 3}
+  - {fileID: 2134307164520552960, guid: ff4f50ca69bcc54478766df4ee1f7e4d, type: 3}
+  - {fileID: 387832658272357237, guid: 08825b52960d0ba49916717770113ce8, type: 3}
+  - {fileID: 4963311066311942203, guid: 4625c67c54b4e6345ab4c191af7e9cf9, type: 3}
+  - {fileID: 4963311066311942203, guid: 180b7e98ec23a414bb9854b2a04a9784, type: 3}
+  - {fileID: 4963311066311942203, guid: 5f16f8f9c5aec4545ad954485ae87689, type: 3}
+  mushroomPlaceholder:
+  - {x: 0.333, y: -0.003, z: -0.183}
+  - {x: 0.64, y: -0.003, z: -0.213}
+  - {x: 0.8452, y: 0, z: -0.3534}
+  - {x: 0.846, y: -0.026, z: -0.165}
+  - {x: 0.4273, y: -0.0246, z: -0.3921}
+  currentLevel: 0
+  totalLevel: 2
+  numberOfBoxes: 5
+  center: {fileID: 0}
+  levelText: {fileID: 0}
+  mushroomLabel:
+  - mushroom
+  - mushroom2
+  boxPrefab: {fileID: 6639042186992974619, guid: b9f513c7a07dd744f9c09a2f5fb1f5e9,
+    type: 3}
+  intensity: 0
+  flashMaterial: {fileID: 2100000, guid: 82f43754923b44545b6367f2171f7661, type: 2}
+  infoImage: {fileID: 0}
+  currentQuestionIndex: 0
+  correctAnswersCount: 0
+  nextLevelUIPrefab: {fileID: 0}
+  gameOverUIPrefab: {fileID: 0}
+  revieveUIPrefab: {fileID: 0}
+  reviveButton: {fileID: 0}
+  endingUIPanel: {fileID: 0}
+  nextLevelImage: {fileID: 0}
+  gameOverImage: {fileID: 0}
+  nameText: {fileID: 0}
+  mushroomInfoText: {fileID: 0}
+  gameOverNameText: {fileID: 0}
+  gameOverInfoText: {fileID: 0}
+  zoomOutDistance: 1.2
+  zoomInDistance: 0.5
+  switchDuration: 0.7
+  dampingSpeed: 0.3
+  targetY: 0.14
+  mushroomY: 0.11
+  hasRevived: 0
+  hasConfirmationPanel: 0
+--- !u!114 &7406086875191274853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4246000360258591653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88aed64992f95aa42b8d08eb37772dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTrack: {fileID: 0}
+  otherTracks:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &744560750278552738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4246000360258591653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7689ab15efc2e9429e8bc28ee73b0ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingScreen: {fileID: 0}
+  loadingBar: {fileID: 0}
+  progressText: {fileID: 0}
+--- !u!114 &7005312529838217639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4246000360258591653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3685e7c0d828af74d9e9cdd0b1447b4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand1: {fileID: 0}
+  hand2: {fileID: 0}
+  isStep1Completed: 0
+  isStep2Completed: 0
+  isStep3Completed: 0
+  stepImage: {fileID: 0}
+  step1Image: {fileID: 21300000, guid: 86d132c37624cf54787757a5b4303a0c, type: 3}
+  step2Image: {fileID: 21300000, guid: ca9fc6815a1083647b58407d66ccfdce, type: 3}
+  step3Image: {fileID: 21300000, guid: ac3aa61c0cc174b47965af592b47031b, type: 3}
